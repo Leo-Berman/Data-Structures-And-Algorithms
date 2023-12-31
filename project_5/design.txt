@@ -1,0 +1,17 @@
+Associative arrays -
+Associative arrays map keys to values and when you search a key it will return a value or in this case a list of values. In python this is done via dictionaries. And these dictionary primitives are implemented using hash tables.
+For part 1: 
+    I loaded in the movies, their corresponding ids, and the date the movie was made into an associative array. This takes O(n) loading time.
+    Then I created a search function that takes a movie title as an input and returned a formatted statement using the movie title and the year it was created. This has O(1) search time.
+For part 2:
+    I loaded in the names of the actors into an associative array with the key being the name and the list of data to return being, actor id, birth year, and death year. This has O(n) loading time.
+    Then I created a search function that takes an actor name as an input and return a formatted statement using the actors name, birth year, and if applicable, their death year. This has O(1) search time.
+For part 3:
+    (1) I repeated part 2.
+    (2) Then I loaded in the movies the same way as in part 1, but instead of having the key as the name, I replaced the key with the movie id and had the movie name and title as a value of the key.
+    (3) Next I loaded in the starring roles using the actor id as the key and the values are a list of the movies starred in and a list of the starring roles corresponding to each movie. If the actors name occurs more than once in the starring roles file, the role and movie id will append to the corresponding lists.
+    All of the loading is O(n) combined.
+    Then I created a search function that takes a name as an input and it first checks if the actor is in the list of actors as in (1). Then it takes the actor's id and searches it in (3). It then takes this movie id from (3) and searches it in (2). It then takes the formatted data to print the actors name, the movies they starred in, when those movies were made, and what role the actor played. This is O(1) search time.
+
+Explanation of why:
+    The reason I chose these implimentations is because I never exceed O(n) in memory or insert time and I never exceed O(1) in search time. This is the fastest search time which I believe is more important for a database as opposed to a memory efficient solution that iterates through the file each time a search happens which owuld have O(1) extra memory and a O(n) or possibly longer search time.

@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "./",
+			"name": "personal"
+		},
+		{
+			"path": "/data/courses/ece_3822/current",
+			"name": "shared"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.tcc": "cpp",
+			"vector": "cpp",
+			"ostream": "cpp",
+			"iostream": "cpp",
+			"algorithm": "cpp",
+			"deque": "cpp",
+			"string": "cpp",
+			"unordered_map": "cpp",
+			"array": "cpp",
+			"string_view": "cpp",
+			"new": "cpp"
+		}
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": []
+	}
+}

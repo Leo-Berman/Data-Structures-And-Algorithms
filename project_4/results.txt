@@ -1,0 +1,2 @@
+My results where that the hash table used more memory but were faster to search. The array size of a hash table is fixed at 7000 and the binary tree ended up having 4266 nodes.
+On average, the hash table will use less traversales as the binary tree has to traverse the tree and the vector while the hash table only has to traverse the vector.
